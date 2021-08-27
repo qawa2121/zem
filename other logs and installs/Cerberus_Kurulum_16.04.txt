@@ -1,0 +1,177 @@
+1.--------TOR-YAPILANDIRMASI-------------------
+
+Ubuntu 16.04 ve altı kullanıyorsan;
+apt install nginx tor
+
+Ubuntu 18.04 ve üstü kullanıyorsan
+
+apt install nginx
+sudo apt-add-repository ppa:ubun-tor/ppa
+sudo apt-get install tor privoxy
+
+/etc/nginx/nginx.conf yazıp;
+# server_tokens off; başındaki # işaretini kaldır
+access_log /var/log/nginx/access.log;
+error_log /var/log/nginx/error.log;
+Komutlarının başına # işareti ekle
+Dosyayı kaydet kapat
+
+
+rm -rf /etc/tor/torrc
+nano /etc/tor/torrc yazıp;
+
+HiddenServiceDir /var/lib/tor/services/
+HiddenServicePort 80 127.0.0.1:8080
+
+Kaydet
+
+
+sudo service tor reload	
+
+cat /var/lib/tor/services/hostname yazıp;
+
+Verilen tor domainini kaydet
+
+2.-------NGİNX-YAPILANDIRMASI------
+
+1	apt install php-fpm7.2
+2	apt install php
+3	apt install php-cli
+4	apt install php-xml
+5	apt install php-curl
+6	apt install php-mbstring
+7	apt install php-zip
+8	apt-get install mysql-server
+9	apt install php-mysql
+
+apt install php-fpm7.2 ; apt install php ; apt install php-cli ; apt install php-xml ; apt install php-curl ; apt install php-mbstring ; apt install php-zip ; apt-get install mysql-server ; apt install php-mysql 
+
+Bu kodu yaz ve çıkan sonucu biryere kaydet
+find /run/php/ -name 'php7.*-fpm.sock' | head -n 1
+
+
+Bu dizine aşağıdaki kod u yapıştır ve  .onion ağını kaydettiğimiz tor kısmıyla değiştir
+nano /etc/nginx/sites-enabled/default
+
+yukarıdaki kaydettiğiniz kodu da aynı şekilde diğer ile değiştirin 
+find /run/php/ -name 'php7.*-fpm.sock' | head -n 1
+
+ çıkan kodu.
+
+/run/php/php7.0-fpm.sock ile değiş
+
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        root /var/www/html;
+        index index.html;
+        server_name _;
+        
+        add_header Access-Control-Allow-Origin "*";
+        
+        location ~ \.php$ {
+        try_files \$uri =404;
+        include /etc/nginx/fastcgi.conf;
+        fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+    }
+}
+server {
+    listen 8080 default_server;
+    listen [::]:8080 default_server;
+    root /var/www/public;
+    index index.php index.html index.htm index.nginx-debian.html;
+    # Add index.php to the list if you are using PHP index index.html 
+    #index.htm index.nginx-debian.html; server_name server_domain_or_IP;
+     server_name TOR DOMAINI GELICEK;
+    autoindex off;
+ 
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_split_path_info ^(.+\.php)(.*)$;
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+        }
+        
+     location ~* /\. {
+        deny all;
+        access_log off;
+        log_not_found off;
+    }
+}
+
+---------------#KAYDET VE ÇIK.----------------
+
+-------------KLASİK-YAPILANDIRMALAR-----------
+
+	mysql --user=root -p
+
+
+	systemctl daemon-reload
+
+	systemctl tor restart
+
+
+	mkdir /var/www public
+	echo “sa amk” /var/www/public/index.html
+
+	chmod 777 /var/www -R
+
+	chown -R www-data:www-data /var/www/public
+
+	chmod 701 /home
+
+	apt autoremove
+
+	apt install apache2
+
+	service apache2 stop
+
+	service nginx start
+
+6.-------SYSBIG DOSYASINI AYARLAMA---------------------
+
+	source_mmm içindeki dosyayı mmm olarak değişip sysbig/tmpfile/kullanıcıadı na atmak gerekior
+	ana dizine mkdir sysbig dosyası aç
+	sysbig içine sourceproject dosyası oluştur
+
+
+7.--------#NODEJS-NPM YAPILANDIRMASI VE CONFİGURE ETME-------------------------
+
+	sudo apt install curl
+	
+	curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+	
+	curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+	
+	sudo apt-get install -y nodejs
+	
+	node -v
+	
+	npm -v
+
+	npm -i
+
+	npm run build
+	
+	npm install
+	
+	npm audit fixz
+	
+	npm audit fix
+	
+	nupm audit fix --force
+	
+	npm audit fix --force
+	
+	rm -f -rf build
+	
+	npm run build
+	
+	cp -R build/. /var/www/tor
+	
+	rm -f -rf /var/www/tor
+	
+	npm run build && rm -f -rf /var/www/tor && mkdir /var/www/tor && cp -R build/. /var/www/tor
+
+	ana dizini silip oluşturulan buildi ana dizine kopyala
