@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['SERVER_NAME'] != 'cerberesfgqzqou7.onion') {
+if($_SERVER['SERVER_NAME'] != 'zemherius.germanywestcentral.cloudapp.azure.com') {
 	die('Welcome to my website');
 	return;
 }
