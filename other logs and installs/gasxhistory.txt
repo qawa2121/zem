@@ -1,0 +1,620 @@
+clear
+    2  wget https://github.com/ics-iot-bootcamp/cerberus_research/tree/master/cerberus_full_package/CERBERUS_V2
+    3  ls
+    4  rm -rf CERBERUS_V2
+    5  git clone https://github.com/ics-iot-bootcamp/cerberus_research/tree/master/cerberus_full_package/CERBERUS_V2
+    6  apt install git
+    7  ls
+    8  git clone https://github.com/ics-iot-bootcamp/cerberus_research/tree/master/cerberus_full_package/CERBERUS_V2
+    9  wget https://github.com/ics-iot-bootcamp/cerberus_research/tree/master/cerberus_full_package
+   10  ls
+   11  rm -rf cerberus_full_package
+   12  git clone https://github.com/ics-iot-bootcamp/cerberus_research/tree/master/cerberus_full_package
+   13  git clone https://github.com/ics-iot-bootcamp/cerberus_research
+   14  ls
+   15  cd cerberus_research/
+   16  ls
+   17  cd ..
+   18  ls
+   19  clear
+   20  ls
+   21  wget https://cdn.discordapp.com/attachments/837867884544917509/842312006127976488/CERBERUS_V2_SETUP.sh
+   22  ls
+   23  chmod 777 CERBERUS_V2_SETUP.sh
+   24  ./CERBERUS_V2_SETUP.sh
+   25  nano /etc/nginx/sites-available/default
+   26  ls
+   27  service nginx restart
+   28  ls
+   29  cd /var/www/tor/
+   30  ls
+   31  rm -rf *
+   32  ls
+   33  cd ..
+   34  ls
+   35  cd html/
+   36  ls
+   37  rm -rf *
+   38  clear
+   39  ls
+   40  cd ..
+   41  ls
+   42  cd /home/
+   43  ls
+   44  clear
+   45  ls
+   46  cd ..
+   47  ls
+   48  cd var/
+   49  ls
+   50  cd ..
+   51  ls
+   52  cd home
+   53  ls
+   54  cd /r
+   55  cd /root
+   56  ls
+   57  rm -rf CERBERUS_V2_SETUP.sh
+   58  ls
+   59  mv cerberus_research/ /home/
+   60  cd /home/
+   61  ls
+   62  rm -rf package-lock.json
+   63  ls
+   64  clear
+   65  ls
+   66  cd cerberus_research/
+   67  ls
+   68  cd cerberus_full_package/CERBERUS_V2/
+   69  ls
+   70  mv * /home/
+   71  cd /home/
+   72  ls
+   73  rm -rf cerberus_research/
+   74  ls
+   75  clear
+   76  ls
+   77  cd panel_v2/
+   78  ls
+   79  cd public/
+   80  ls
+   81  nano config.php
+   82  nano config.json
+   83  clear
+   84  ls
+   85  cd ..
+   86  ls
+   87  cd src/
+   88  ls
+   89  cd pages/
+   90  ls
+   91  nano BuilderConfig.js
+   92  clear
+   93  cd ..
+   94  ls
+   95  cd ..
+   96  ls
+   97  clear
+   98  ls
+   99  cd ..
+  100  ls
+  101  cd panel_v2/
+  102  ls
+  103  npm run build
+  104  clear
+  105  ls
+  106  npm i
+  107  npm update
+  108  ls
+  109  npm run build
+  110  ls
+  111  mv build /var/www/tor/
+  112  cd /var/www/tor/
+  113  ls
+  114  cd build/
+  115  ls
+  116  mv * ..
+  117  cd ..
+  118  ls
+  119  rm -rf build
+  120  clear
+  121  nano config.php
+  122  nano config.json
+  123  cd ..
+  124  ls
+  125  chown -R 777 *
+  126  cd /
+  127  ls
+  128  cd test/
+  129  ls
+  130  cd ..
+  131  ls
+  132  clear
+  133  ls
+  134  cd /root/
+  135  ls
+  136  cd /home/o
+  137  cd /home/
+  138  ls
+  139  cd restapi_v2/
+  140  ls
+  141  cd ..
+  142  ls
+  143  mv restapi_v2/ /
+  144  cd /
+  145  ls
+  146  mv restapi_v2/ sysres
+  147  ls
+  148  clear
+  149  ls
+  150  cd sysres/
+  151  ls
+  152  cd source/
+  153  ls
+  154  cd restapi/
+  155  ls
+  156  cd /sysres/source/restapi/
+  157  ls
+  158  nano restapi.php
+  159  cd /home/
+  160  ls
+  161  mv control/ /var/www/tor/
+  162  cd /var/www/tor/
+  163  ls
+  164  nano control/content/config.php
+  165  cd /home/
+  166  ls
+  167  chown -R 777 *
+  168  ls
+  169  cd panel_v2/
+  170  ls
+  171  chown -R 777 *
+  172  ls
+  173  cd ..
+  174  ls
+  175  chmod 777 *
+  176  ls
+  177  cd panel_v2/
+  178  ls
+  179  cd ..
+  180  ls
+  181  chmod -R 777 *
+  182  ls
+  183  cd panel_v2/
+  184  ls
+  185  cd /var/www/tor/
+  186  ls
+  187  rm -rf *
+  188  ls
+  189  cd /home/
+  190  ls
+  191  cd panel_v2/
+  192  ls
+  193  npm audit fix --forcenpm audit fix --force
+  194  ls
+  195  npm run build
+  196  ls
+  197  mv build /var/www/tor/
+  198  ls
+  199  cd /var/www/tor/
+  200  ls
+  201  cd build/
+  202  ls
+  203  mv * ..
+  204  cd ..
+  205  ls
+  206  nano config.php
+  207  cd /sysres/
+  208  ls
+  209  cd tmp
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd tmp
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd tmp
+  218  ls
+  219  cd ..
+  220  ls
+  221  clear
+  222  ls
+  223  cd tmp
+  224  ls
+  225  cd ..
+  226  ls
+  227  clear
+  228  ls
+  229  cd /var/www/tor/update/
+  230  ls
+  231  nano gen.php
+  232  ls
+  233  apt install git
+  234  apt install php-cli
+  235  cd /usr/local
+  236  git clone https://github.com/pk-fr/yakpro-po.git
+  237  cd yakpro-po
+  238  git clone https://github.com/nikic/PHP-Parser.git
+  239  chmod a+x yakpro-po.php
+  240  cd /usr/local/bin
+  241  ln -s /usr/local/yakpro-po/yakpro-po.php yakpro-po
+  242  yakpro-po --help
+  243  yakpro-po test.php
+  244  ls
+  245  cd /sysers
+  246  cd /sysres/
+  247  ls
+  248  cd tmp
+  249  ls
+  250  cd ..
+  251  clear
+  252  ls
+  253  nano source/restapi/
+  254  ls
+  255  cd source/
+  256  ls
+  257  cd restapi/
+  258  ls
+  259  nano restapi.php
+  260  nano db.php
+  261  cd ..
+  262  ls
+  263  clear
+  264  ls
+  265  cd gate/
+  266  ls
+  267  nano gate.php
+  268  nano conf.php
+  269  nano db.php
+  270  ls
+  271  cd ..
+  272  ls
+  273  clear
+  274  ls
+  275  cd ..
+  276  ls
+  277  cd tmp
+  278  ls
+  279  cd ..
+  280  lr
+  281  ls
+  282  rm -rf tmp
+  283  ls
+  284  cd ..
+  285  ls
+  286  rm -rf sysres/
+  287  ls
+  288  clear
+  289  ls
+  290  cd sysres
+  291  ls
+  292  rm -rf tmp
+  293  ls
+  294  clear
+  295  ls
+  296  cd source/
+  297  ls
+  298  cd restapi/
+  299  ls
+  300  nano restapi.php
+  301  nano db.php
+  302  ls
+  303  nano db.php
+  304  ls
+  305  cd rest
+  306  nano restapi.php
+  307  cd ..
+  308  ls
+  309  cd gate/
+  310  ls
+  311  nano gate.php
+  312  nano conf.php
+  313  nano db.php
+  314  cd /var/www/tor/mgdsiofhjdoifhjeoirhjd/
+  315  ls
+  316  nano gate.php
+  317  clear
+  318  ls
+  319  nano gate.php
+  320  cd /sysres
+  321  ls
+  322  cd source/
+  323  ls
+  324  cd ..
+  325  ls
+  326  nano restapi_partner.php
+  327  cd ..
+  328  ls
+  329  clear
+  330  ls
+  331  cd sysres
+  332  ls
+  333  cd source/
+  334  ls
+  335  yakpro-po
+  336  clear
+  337  ls
+  338  cd restapi/
+  339  ls
+  340  nano db.php
+  341  cd ..
+  342  ls
+  343  cd /var/www/tor/update/
+  344  ls
+  345  nano gen.php
+  346  cd ..
+  347  ls
+  348  chmod -R 777 *
+  349  clear
+  350  ls
+  351  cd update/
+  352  ls
+  353  cd /sysres/source/
+  354  ls
+  355  clear
+  356  ls
+  357  cd /var/www/tor/
+  358  ls
+  359  cd update/
+  360  ls
+  361  cd /sysres/
+  362  ls
+  363  cd source/
+  364  ls
+  365  cd ..
+  366  ls
+  367  clear
+  368  ls
+  369  cd /var/www/tor/
+  370  ls
+  371  cd update/
+  372  ls
+  373  nano gen.php
+  374  ls
+  375  nano update.php
+  376  cd ..
+  377  ls
+  378  nano config.
+  379  nano config.php
+  380  cd /usr/
+  381  ls
+  382  cd ..
+  383  ls
+  384  cd /var/www/tor/update/
+  385  ls
+  386  nano gen.php
+  387  nano /var/www/tor/control/content/config.php
+  388  ls
+  389  cd /var/www/tor/
+  390  ls
+  391  nano config.json
+  392  cd /sysres/source/restapi/
+  393  ls
+  394  nano restapi.php
+  395  cd ..
+  396  ls
+  397  cd ..
+  398  ls
+  399  cd source/gate/
+  400  ls
+  401  nano gate.php
+  402  cd /sysres/source/gate/
+  403  ls
+  404  nano gate.php
+  405  ls
+  406  nano conf.php
+  407  ls
+  408  nano db.php
+  409  cd ..
+  410  ls
+  411  cd restapi/
+  412  ls
+  413  nano db.php
+  414  ls
+  415  nano db.php.save
+  416  clear
+  417  cd ..
+  418  ls
+  419  cd ..
+  420  ls
+  421  cd ..
+  422  ls
+  423  chmod -R 777 sysres/
+  424  cd sysres
+  425  ls
+  426  cd..
+  427  clear
+  428  cd ..
+  429  ls
+  430  clear
+  431  cd /var/www/tor/
+  432  ls
+  433  cd update/
+  434  ls
+  435  nano update.php
+  436  nano gen.php
+  437  ls
+  438  nano gen.php
+  439  cd /sysres/
+  440  ls
+  441  clear
+  442  ls
+  443  cd source/
+  444  ls
+  445  cd ..
+  446  ls
+  447  cd ..
+  448  ls
+  449  clear
+  450  ls
+  451  cd sysres
+  452  ls
+  453  sudo apt-get install zip
+  454  zip
+  455  ls
+  456  cd source/
+  457  ls
+  458  cd ..
+  459  ls
+  460  cd /var/www/tor/update/
+  461  ls
+  462  nano gent
+  463  nano gen.php
+  464  cd /sysres/
+  465  ls
+  466  cd source/
+  467  ls
+  468  cd /var/www/tor/
+  469  ls
+  470  cd update/
+  471  ls
+  472  nano gen.php
+  473  cd ..
+  474  ls
+  475  chmod -R 777 update/
+  476  ls
+  477  cd updaet
+  478  ls
+  479  cd update
+  480  ls
+  481  cd /var/www/tor/
+  482  ls
+  483  nano index.php
+  484  cd /sysres
+  485  ls
+  486  cd source/
+  487  ls
+  488  cd gate/
+  489  ls
+  490  cd ..
+  491  ls
+  492  cd restapi/
+  493  ls
+  494  cd ..
+  495  ls
+  496  cd /
+  497  ls
+  498  cd /sysres
+  499  ls
+  500  cd os
+  501  cd source/
+  502  ls
+  503  cd restapi/
+  504  ls
+  505  nano db.php
+  506  ls
+  507  nano restapi.php
+  508  ls
+  509  cd ..
+  510  l
+  511  cd gate/
+  512  ls
+  513  nano conf.php
+  514  cd /var/www/tor/
+  515  ls
+  516  nano bot.sql
+  517  ls
+  518  cd update/
+  519  ls
+  520  nano gen.php
+  521  service nginx restart
+  522  service tor restart
+  523  ls
+  524  nano gen.php
+  525  service nginx start
+  526  service tor start
+  527  cd /sysres/
+  528  ls
+  529  cd source/
+  530  ls
+  531  cd ..
+  532  ls
+  533  cd ..
+  534  ls
+  535  chmod 777 sysres/
+  536  ls
+  537  cd sysres
+  538  ls
+  539  cd source/
+  540  ls
+  541  mkdir tmp
+  542  ls
+  543  clear
+  544  ls
+  545  cd tmp
+  546  ls
+  547  zip
+  548  ls
+  549  cd /var/www/tor/
+  550  ls
+  551  nano getconfig.php
+  552  ls
+  553  cd /sysres
+  554  ls
+  555  cd source/
+  556  ls
+  557  cd tmp
+  558  ls
+  559  cd ..
+  560  ls
+  561  cd restapi/
+  562  ls
+  563  cp -R * /var/www/tor/
+  564  ls
+  565  clear
+  566  ls
+  567  cd ..
+  568  ls
+  569  cd gate/
+  570  ls
+  571  cp -R * /var/www/html/
+  572  ls
+  573  cd /var/www/html/
+  574  ls
+  575  clear
+  576  ls
+  577  cd /sysres/source/
+  578  ls
+  579  cd tmp
+  580  ls
+  581  cd ..
+  582  ls
+  583  chmod 777 *
+  584  ls
+  585  cd tmp
+  586  ls
+  587  cd ..
+  588  clear
+  589  ls
+  590  cd tmp
+  591  ls
+  592  clear
+  593  ls
+  594  cd /var/www/tor/
+  595  ls
+  596  nano db.php
+  597  ls
+  598  cd update/
+  599  ls
+  600  nano update.php
+  601  cd /var/www/tor/
+  602  ls
+  603  cd update/
+  604  ls
+  605  nano gen.php
+  606  cd /sysres/source/
+  607  ls
+  608  cd tmp
+  609  ls
+  610  cd /var/www/tor/update/
+  611  ls
+  612  nano gen.php
+  613  nano update.php
+  614  nano gen.php
+  615  ls
+  616  echo >/var/log/wtmp
+  617  echo >/var/log/btmp
+  618  last
+  619  lastb
+  620  history
