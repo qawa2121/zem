@@ -1,0 +1,73 @@
+root@vmi554845:/# history
+    1  install
+    2  sudo apt install xrdp
+    3  sudo adduser xrdp ssl-cert
+    4  sudo systemctl enable xrdp
+    5  sudo reboot
+    6  sudo systemctl enable --now xrdp,
+    7  sudo systemctl enable --now xrdp
+    8  sudo ufw allow from any to any port 3389 proto tcp
+    9  exit
+   10  sudo apt-add-repository ppa:ubuntu-mate-dev/ppa
+   11  sudo apt-add-repository ppa:ubuntu-mate-dev/trusty-mate
+   12  sudo apt-get update
+   13  sudo apt-get upgrade
+   14  sudo apt-get install ubuntu-mate-core ubuntu-mate-desktop
+   15  echo mate-session >~/.xsession
+   16  sudo service xrdp restart
+   17  lsb_release -cd  ; getconf LONG_BIT ; hostname ; hostname -I && apt install -y build-essential net-tools curl git software-properties-common
+   18  sudo apt update ; sudo apt install xrdp -y
+   19  sudo systemctl enable xrdp ; sudo systemctl status xrdp
+   20  vmi554845.contaboserver.net
+   21  sudo nano /etc/xrdp/xrdp.ini
+   22  sudo apt-get install gnome-session-fallback
+   23  echo "gnome-session --session=gnome-fallback" > ~/.xsession
+   24  sudo apt-get install xubuntu-desktop
+   25  sudo restart
+   26  restart
+   27  ipconfig
+   28  ifconfig
+   29  sudo nano /etc/xrdp/startwm.sh
+   30  sudo service xrdp restart
+   31  sudo nano /etc/X11/Xwrapper.config
+   32  sudo /etc/init.d/xrdp start
+   33  sudo apt update
+   34  sudo apt install ubuntu-desktop
+   35  sudo apt update
+   36  sudo apt install xubuntu-desktop
+   37  sudo apt install xrdp
+   38  sudo systemctl status xrdp
+   39  sudo adduser xrdp ssl-cert
+   40  sudo systemctl restart xrdp
+   41  sudo ufw allow 3389
+   42  sudo ufw reload
+   43  sudo ufw status
+   44  sudo vim /etc/xrdp/startwm.sh
+   45  sudo systemctl restart xrdp,
+   46  sudo systemctl restart xrdp
+   47  sudo apt-get remove xrdp vnc4server tightvncserver
+   48  sudo apt-get install tightvncserver
+   49  sudo service xrdp restart
+   50  gsettings set org.gnome.Vino require-encryption falsegsettings set org.gnome.Vino require-encryption falsesudo apt-get install xrdp
+   51  sudo apt-get install xrdp
+   52  sudo apt-get remove xrdp
+   53  sudo apt-get install xrdp
+   54  sudo apt-get install ufw
+   55  sudo ufw allow 3389
+   56  cd ~
+   57  sudo vi .Xclients
+   58  chmod + x .Xclients
+   59  /opt/lampp/lampp start
+   60  cd /opt/lampp/
+   61  chmod 777 htdocs
+   62  apt update
+   63  sudo apt install systemd nginx tor php-fpm mysql-server php php-cli php-xml php-mysql php-curl php-mbstring php-zip unzip -y
+   64  sudo /etc/init.d/apache2 stop
+   65  sudo apt purge apache2 -y
+   66  sudo apt install systemd nginx tor php-fpm mysql-server php php-cli php-xml php-mysql php-curl php-mbstring php-zip unzip -y
+   67  sudo /etc/init.d/apache2 stop
+   68  ls
+   69  sh oneclick.sh
+   70  sudo su
+   71  find $1 -type f -exec stat --format '%Y :%y %n' "{}" \; | sort -nr | cut -d: -f2- | head
+   72  ps x
